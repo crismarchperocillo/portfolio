@@ -530,7 +530,7 @@
 
   .project__wrapper {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2rem;
   }
   /* Testimonials
@@ -704,11 +704,6 @@
           box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
       }
 
-    .project__wrapper {
-      grid-template-columns: repeat(2, 250px);
-      justify-content: center;
-    }
-
     .footer__wrapper {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -756,11 +751,6 @@
 
       .skills__wrapper {
           grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .project__wrapper {
-          grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-          gap: 2rem;
       }
 
       .project__content {
@@ -859,7 +849,7 @@
     .qualification__content,
     .service__wrapper,
     .project__wrapper {
-      grid-template-columns: repeat(3, 1fr);
+       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .contact__wrapper {
@@ -877,3 +867,10 @@
       grid-template-columns: repeat(3, 1fr);
     }
   }
+
+  @media screen and (max-width: 400px) {
+    .project__wrapper {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+    }
+}
