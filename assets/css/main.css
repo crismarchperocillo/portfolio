@@ -528,6 +528,11 @@
     column-gap: 1rem;
   }
 
+  .project__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2rem;
+  }
   /* Testimonials
   --------------------------------------------------------------*/
   .testimonial__card {
@@ -709,9 +714,9 @@
     }
 
     /* Skills: one row of 4 on tablets */
-    .skills__wrapper {
+    /* .skills__wrapper {
       grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
+    } */
 
     .skills__content {
       padding: 3rem 2rem;
